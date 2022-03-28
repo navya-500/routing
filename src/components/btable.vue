@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-table :items="items" :fields="fields" :tbody-tr-class="rowClass"></b-table>
+    <b-table :items="items" :fields="fields"></b-table>
 
   </div>
 </template>
