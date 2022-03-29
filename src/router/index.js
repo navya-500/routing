@@ -1,7 +1,101 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
-import home from '@/components/home.vue'
+import QUE1 from '../components/QUE1.vue'
+import QUE2 from '../components/QUE2.vue'
+import QUE3 from '../components/QUE3.vue'
+import QUE4a from '../components/QUE4(a).vue'
+import QUE4b from '../components/QUE4(b).vue'
+import QUE6 from '../components/QUE6.vue'
+import QUE9 from '../components/QUE9.vue'
+Vue.use(VueRouter)
+const routes=  [
+{
+    path : '/HelloWorld',
+    name : "HelloWorld",
+    component: HelloWorld
+},
+{
+    path : '/que1',
+    name : "QUE1",
+    component: QUE1
+},
+{
+    path : '/que2',
+    name : "QUE2",
+    component: QUE2
+},
+{
+    path : '/que3',
+    name : "QUE3",
+    component: QUE3
+},
+{
+    path : '/que4a',
+    name : "QUE4a",
+    component: QUE4a
+},
+{
+    path : '/que4b',
+    name : "QUE4b",
+    component: QUE4b
+},
+{
+    path : '/que6',
+    name : "QUE6",
+    component: QUE6
+},
+{
+    path : '/que9',
+    name : "QUE9",
+    component: QUE9
+}
+
+]
+let router =   new VueRouter({
+    routes // short for `routes: routes`
+  })
+export default router
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import home from '@/components/home.vue'
 import services from '../components/services.vue'
 import contact from '../components/contact.vue'
 import Testing from '../components/Testing.vue'
@@ -10,17 +104,12 @@ import table from '../components/table.vue'
 import random from '../components/random.vue'
 import Table from '../components/Table.vue'
 import api from '../components/api.vue'
-import form from '../components/forms.vue'
+import form from '../components/forms.vue'*/
 
-Vue.use(VueRouter)
-const routes=  [
-{
-    path : '/HelloWorld',
-    name : "HelloWorld",
-    component: HelloWorld
-},
 
-{
+
+
+/*{
     path : '/home',
     name : "Home",
     component: home
@@ -68,9 +157,4 @@ const routes=  [
     path : '/form',
     name : "form",
     component: form
-}
-]
-let router =   new VueRouter({
-    routes // short for `routes: routes`
-  })
-export default router
+}*/
