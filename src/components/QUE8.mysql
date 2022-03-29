@@ -1,0 +1,32 @@
+CREATE TABLE  EMPLOYEE(
+    Id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL
+);
+INSERT INTO EMPLOYEE VALUES(20,'Captain Piett');
+INSERT INTO EMPLOYEE VALUES(24,'General Veers');
+INSERT INTO EMPLOYEE VALUES(56,'Admiral Ozzel');
+INSERT INTO EMPLOYEE VALUES(88,'Commander Jerjerrod');
+
+select * from EMPLOYEE where name='General Veers';
+<template>
+<div>
+    <h2>Question 8</h2>
+     <button @click="f2()">Submit</button>
+</div>
+</template>
+<script>
+var officers = [ { id: 20, name: 'Captain Piett' }, 
+{ id: 24, name: 'General Veers' }, 
+{ id: 56, name: 'Admiral Ozzel' },
+ { id: 88, name: 'Commander Jerjerrod' } ];
+ 
+export default{
+    name:"QuestioN8",
+methods: {
+    f2(){
+       let index=officers.filter(r =>  {return r.id==24});
+          console.log(index)
+    }
+},
+}
+</script>
