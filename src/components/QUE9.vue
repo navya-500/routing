@@ -7,7 +7,7 @@
 <script>
 var a =[1,2,5];
 var b =[3,4,6,7];
-var c =[...a,...b];
+var c =[...a , ...b];
 export default{
     name:'SpreaD',
 methods:{
