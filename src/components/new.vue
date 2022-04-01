@@ -1,10 +1,20 @@
 <template>
 <div>
 <button @click="first()">HR</button>
-<button>QA</button>
-<button>sales</button>
-<button>FrontendDeveloper</button>
-<button>Developer</button>
+<button @click="sec()">QA</button>
+<button @click="thi()">sales</button>
+<button @click="four()">FrontendDeveloper</button>
+<button @click="fif()">Developer</button><br><br>
+<form>
+<label for="id">Enter Id:</label>
+<input type="number" required><br>
+<label for="name">Enter name:</label>
+<input type="text" required><br>
+<label for="department">Enter department:</label>
+<input type="text" required><br><br>
+<button type="submit">submit</button>
+    </form>
+
 </div>
 </template>
 <script>
@@ -20,8 +30,7 @@ export default {
             {id:1142,name:"Ram",department:"Developer"},
             {id:1143,name:"pawan",department:"Developer"}
  
-        ],
-        ARR:[1,2,3]
+        ]
         }
     },
     methods:{
@@ -31,7 +40,40 @@ export default {
                 return arrItem
             })
             console.log(emp)
-        }
+        },
+        sec(){
+       let emp =  this.empDet.map((arrItem)=>{
+                if(arrItem.department=="QA") 
+                return arrItem
+            })
+            console.log(emp)
+        },
+        thi(){
+       let emp =  this.empDet.map((arrItem)=>{
+                if(arrItem.department=="sales") 
+                return arrItem
+            })
+            console.log(emp)
+        },
+        four(){
+       let emp =  this.empDet.map((arrItem)=>{
+                if(arrItem.department=="FrontendDeveloper") 
+                return arrItem
+            })
+            console.log(emp)
+        },
+        fif(){
+            let emp =  this.empDet.map((arrItem)=>{
+                if(arrItem.department=="Developer") 
+                return arrItem
+            })
+            console.log(emp)
+
+        },
+        /*add(){
+            const empDet = new.set();
+            empDet.add(id, "rani");
+        }*/
     }
 }
 

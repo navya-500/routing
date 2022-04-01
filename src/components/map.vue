@@ -13,8 +13,6 @@
 <button @click="search()">click</button><br><br>
 <h2>concatination concept</h2>
 <button @click="add()">click</button><br><br>
-
-
 </div>
 </template>
 <script>
