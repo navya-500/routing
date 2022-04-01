@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
   
-  <QUE3 :message="message" :name="name" ref="ref" :number="number" :mantra="mantra"></QUE3>
-  <QUE3 :message="message" :name="name" ref="refo" :number="number" :Items="Items"></QUE3>
+  <que4a :message="message" :name="name" ref="ref" :number="number" :mantra="mantra"></que4a>
+  <que4a :message="message" :name="name" ref="refo" :number="number" :Items="Items"></que4a>
 
     hello world
   <button @click="click()">submit</button>
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import QUE3 from '../components/QUE3'
+import que4a from '../components/QUE4(a)'
 export default {
   name: 'HelloWorld',
   //local declaration in que-3
   components: {
     
-    QUE3,  
+    que4a,  
   },
   data(){
     return{
