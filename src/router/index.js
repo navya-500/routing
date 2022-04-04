@@ -13,6 +13,20 @@ import vfor2 from '../components/vfor2.vue'
 import filter from '../components/filter.vue'
 import es6 from '../components/es6.vue'
 import map from '../components/map.vue'
+import New from '../components/new.vue'
+import npm from '../components/npmtable.vue'
+import emit from '../components/emitChild.vue'
+import emitt from '../components/emitParent.vue'
+import ques1 from '../components/ques01.vue'
+import ques2 from '../components/ques02.vue'
+import ques3 from '../components/ques03.vue'
+import ques4 from '../components/ques04.vue'
+import ques5 from '../components/ques05.vue'
+import ques6b from '../components/ques06(parent).vue'
+import ques7 from '../components/ques07.vue'
+import ques10 from '../components/ques10.vue'
+import ques8 from '../components/ques08.vue'
+import ques9 from '../components/ques09.vue'
 Vue.use(VueRouter)
 const routes=  [
 {path : '/HelloWorld',name : "HelloWorld", component: HelloWorld},
@@ -27,7 +41,21 @@ const routes=  [
 {path : '/vfor2',name : "vfor2",component: vfor2},
 {path : '/filter',name : "filter",component: filter},
 {path : '/es6',name : "es6",component: es6},
-{path : '/map',name : "map",component: map}
+{path : '/map',name : "map",component: map},
+{path : '/new',name : "new",component: New},
+{path : '/npm',name : "npm",component: npm},
+{path : '/emit',name : "emit",component: emit},
+{path : '/emitt',name : "emitt",component: emitt},
+{path : '/ques1',name : "ques1",component: ques1},
+{path : '/ques2',name : "ques2",component: ques2},
+{path : '/ques3',name : "ques3",component: ques3},
+{path : '/ques4',name : "ques4",component: ques4},
+{path : '/ques5',name : "ques5",component: ques5},
+{path : '/ques6b',name : "ques6b",component: ques6b},
+{path : '/ques7',name : "ques7",component: ques7},
+{path : '/ques8',name : "ques8",component: ques8},
+{path : '/ques9',name : "ques9",component: ques9},
+{path : '/ques10',name : "ques10",component: ques10}
 ]
 let router =   new VueRouter({
     routes // short for `routes: routes`
