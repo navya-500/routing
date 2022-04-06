@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
+import api from '../components/api.vue'
 import QUE1 from '../components/QUE1.vue'
 import QUE2 from '../components/QUE2.vue'
 import QUE3 from '../components/QUE3.vue'
@@ -27,9 +28,22 @@ import ques7 from '../components/ques07.vue'
 import ques10 from '../components/ques10.vue'
 import ques8 from '../components/ques08.vue'
 import ques9 from '../components/ques09.vue'
+import comp from '../components/compareStr.vue'
+import apiget from '../components/api.vue'
+import q1 from '../components/q1.vue'
+import q2 from '../components/q2.vue'
+import q3 from '../components/q3.vue'
+import q4 from '../components/q4.vue'
+import q5 from '../components/q5.vue'
+import q6 from '../components/q6(parent).vue'
+import q7 from '../components/q7.vue'
+import q8 from '../components/q8.vue'
+import q9 from '../components/q9.vue'
+import q10 from '../components/q10.vue'
 Vue.use(VueRouter)
 const routes=  [
 {path : '/HelloWorld',name : "HelloWorld", component: HelloWorld},
+{path : '/api',name : "api",component: api},
 {path : '/que1',name : "QUE1",component: QUE1},
 {path : '/que2',name : "QUE2",component: QUE2},
 {path : '/que3',name : "QUE3",component: QUE3},
@@ -55,7 +69,19 @@ const routes=  [
 {path : '/ques7',name : "ques7",component: ques7},
 {path : '/ques8',name : "ques8",component: ques8},
 {path : '/ques9',name : "ques9",component: ques9},
-{path : '/ques10',name : "ques10",component: ques10}
+{path : '/ques10',name : "ques10",component: ques10},
+{path : '/comp',name : "comp",component: comp},
+{path : '/apiget',name : "random",component: apiget},
+{path : '/q1',name : "q1",component: q1},
+{path : '/q2',name : "q2",component: q2},
+{path : '/q3',name : "q3",component: q3},
+{path : '/q4',name : "q4",component: q4},
+{path : '/q5',name : "q5",component: q5},
+{path : '/q6',name : "q6",component: q6},
+{path : '/q7',name : "q7",component: q7},
+{path : '/q8',name : "q8",component: q8},
+{path : '/q9',name : "q9",component: q9},
+{path : '/q10',name : "q10",component: q10}
 ]
 let router =   new VueRouter({
     routes // short for `routes: routes`
