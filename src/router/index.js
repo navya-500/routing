@@ -40,6 +40,14 @@ import q7 from '../components/q7.vue'
 import q8 from '../components/q8.vue'
 import q9 from '../components/q9.vue'
 import q10 from '../components/q10.vue'
+import fetch from '../components/fetch.vue'
+import task from '../components/task.vue'
+import question1 from '../components/Question1.vue'
+import question3 from '../components/Question3.vue'
+import question4 from '../components/Question4.vue'
+import question5 from '../components/Question5.vue'
+import question6 from '../components/Question6.vue'
+import fet from '../components/fetching.vue'
 Vue.use(VueRouter)
 const routes=  [
 {path : '/HelloWorld',name : "HelloWorld", component: HelloWorld},
@@ -81,7 +89,15 @@ const routes=  [
 {path : '/q7',name : "q7",component: q7},
 {path : '/q8',name : "q8",component: q8},
 {path : '/q9',name : "q9",component: q9},
-{path : '/q10',name : "q10",component: q10}
+{path : '/q10',name : "q10",component: q10},
+{path : '/fetch',name : "fetch",component: fetch},
+{path : '/task',name : "task",component: task},
+{path : '/question1',name : "question1",component: question1},
+{path : '/question6',name : "question6",component: question6},
+{path : '/question3',name : "question3",component: question3},
+{path : '/question4',name : "question4",component: question4},
+{path : '/question5',name : "question5",component: question5},
+{path : '/fet',name : "fet",component: fet}
 ]
 let router =   new VueRouter({
     routes // short for `routes: routes`
