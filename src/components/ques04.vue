@@ -1,7 +1,7 @@
 <template>
 <div>
 <h2>b-card</h2>
-<b-table :items="items" :fields="fields"></b-table>
+
 <b-card>
     {
     postId: 1,
@@ -46,7 +46,7 @@
 <script>
 
 export default {
-name: "bCard",
+name: "bcarD",
   }
 
 </script>

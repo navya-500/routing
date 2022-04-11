@@ -1,7 +1,7 @@
 <template>
     <div>
     components Registration in local and global
-        <h4>msg:{{message}}</h4>
+        <h4>message:{{message}}</h4>
         <h4>name:{{name}}</h4>
         <h4>number:{{number}}</h4>  
         <h4>Items:{{Items}}</h4>
@@ -11,12 +11,12 @@
 <script>
 export default {
     name : "compReg",
-components:{
-},
+
 props : {
     message: String,
     name : String,
-    number : {
+    number : 
+     {
         default:1138,
         type:Number
     },
@@ -28,7 +28,7 @@ Items:[
     },
 methods:{
     fun(){
-        alert("keep it up")
+        alert("iam child")
     }
 }
 

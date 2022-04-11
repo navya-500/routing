@@ -1,45 +1,36 @@
 <template>
-<div>
-    <h2 class="p-3 text-center">Disaplay a list of items with v-for</h2>
-    
-
-    <b-card v-for="item in items" :key="item.name">
-    <td>university_name:{{ item.university_name }}</td><br>
-    <td>domains :{{ item.domains }}</td><br>
-    <a><td>website_url :{{ item.website_url }}</td></a><br>
-    <td>state_province :{{ item.state_province }}</td><br>
+  <div>
+    <h1>Question 5</h1>
+    <b-form-input v-model="value" placeholder="Enter Country name"></b-form-input>
+    <b-button variant="primary" @click="getData">Get Data</b-button>
+    <b-card v-for="value in items" :key="value.domains" class="mb-2">
+      <b-card-text>university_name:-- {{ value.university_name }} </b-card-text>
+      <p>domains:--{{ value.domains }}</p>
+      <p>website_url:--{{ value.website_url }}</p>
+      <p>state_province:--{{ value.state_province }}</p>
     </b-card>
-    <input type="text" placeholder="enter your Input">
-    <button @click='getData()'>SAVE</button>
-    
-     
   </div>
 </template>
 <script>
-export default{
-    name:'fetchinG',
-    data(){
-        return{
-            fields:['university_name','domains','website_url','state_province'],
-            items:[
-                {university_name:'Marywood University',domains:'marywood.edu',website_url:'http://www.marywood.edu',state_province:'null'},
-                {university_name:'Lindenwood University',domains:'lindenwood.edu',website_url:'http://www.lindenwood.edu/',state_province:'null'},
-                {university_name:'University of Petroleum and Energy Studies',domains:'upes.ac.in',website_url:'http://www.lindenwood.edu/',state_province:'Dehradun'},
-                {university_name:'Lovely Professional University',domains:'lpu.in',website_url:'https://sullivan.edu/',state_province:'Punjab'}
-            ]
-        }
+  export default {
+    name: "QueS5",
+    data() {
+      return {
+        value: "",
+        items: [],
+        res: [],
+      };
     },
-    methods:{
-        getData(){
-let response= new Promise((resolve, reject) => {                 
-fetch('http://universities.hipolabs.com/search?country='+this.countryname).then((response) => {                                
- resolve(response.data);          
-    }).catch((error) => {                        
-            reject(error);
-            }); 
-            });
-   response.then((data) => {console.log("response", data) }).catch((err) => {console.log(err)})  
-}
-    }
-}
+ methods: {
+      async getData() {
+        const response = await fetch("http://universities.hipolabs.com/search?country=" + this.value, {
+          method: "GET",
+        });
+        const responseText = await response.json();
+        this.items = responseText.map((row) => {
+          return { university_name: row.name, domains: row.domains, website_url: row.web_pages, state_province: row["state-province"] };
+        });
+      },
+    },
+  };
 </script>

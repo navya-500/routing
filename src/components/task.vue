@@ -34,6 +34,13 @@ export default{
        this.items.push({id:(document.getElementById("demo").value),name:(document.getElementById("dem").value),dept:(document.getElementById("de").value)})
        },
        del(){
+        //    for(i=0;i<items.length;i++){
+        //        if(i==document.getElementById("demo").value){
+        //            this.items.pop()
+        //        }else{
+
+        //        }
+        //    }
             this.items.pop({id:(document.getElementById("demo").value),name:(document.getElementById("dem").value),dept:(document.getElementById("de").value)})
         }
     }
