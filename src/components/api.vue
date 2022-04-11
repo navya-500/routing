@@ -35,7 +35,5 @@ methods: {
 async getData() {
 this.options.data.search = this.text;
 this.searchData = await axios.request(this.options);
-},
-},
-};
+},},};
 </script>

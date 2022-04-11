@@ -4,15 +4,17 @@
 <button @click="sec()">QA</button>
 <button @click="thi()">sales</button>
 <button @click="four()">FrontendDeveloper</button>
-<button @click="fif()">Developer</button><br><br>
-<form>
-<label for="id">Enter Id:</label>
-<input type="number" required><br>
+<button @click="fif()">Developer</button>
+<br><br>
+<form >
+<label for="id" >Enter Id:</label>
+<input id="demo" type="number" required><br>
 <label for="name">Enter name:</label>
-<input type="text" required><br>
+<input id="dem" type="text" required><br>
 <label for="department">Enter department:</label>
-<input type="text" required><br><br>
-<button type="submit">submit</button>
+<input  id="de" type="text" required><br><br>
+<button type="submit" @click="add()">click to add</button>
+<button type="submit" @click="del()">click to delete</button>
     </form>
 
 </div>
@@ -70,10 +72,12 @@ export default {
             console.log(emp)
 
         },
-        /*add(){
-            const empDet = new.set();
-            empDet.add(id, "rani");
-        }*/
+        add(){
+           this.empDet.push({id:(document.getElementById("demo").value),name:(document.getElementById("dem").value),department:(document.getElementById("de").value)})
+        },
+        del(){
+            this.empDet.pop({id:(document.getElementById("demo").value),name:(document.getElementById("dem").value),department:(document.getElementById("de").value)})
+        }
     }
 }
 

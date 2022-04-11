@@ -48,6 +48,7 @@ import question4 from '../components/Question4.vue'
 import question5 from '../components/Question5.vue'
 import question6 from '../components/Question6.vue'
 import fet from '../components/fetching.vue'
+import fetchurl from '../components/fetchurl.vue'
 Vue.use(VueRouter)
 const routes=  [
 {path : '/HelloWorld',name : "HelloWorld", component: HelloWorld},
@@ -97,7 +98,8 @@ const routes=  [
 {path : '/question3',name : "question3",component: question3},
 {path : '/question4',name : "question4",component: question4},
 {path : '/question5',name : "question5",component: question5},
-{path : '/fet',name : "fet",component: fet}
+{path : '/fet',name : "fet",component: fet},
+{path : '/fetchurl',name : "fetchurl",component: fetchurl}
 ]
 let router =   new VueRouter({
     routes // short for `routes: routes`

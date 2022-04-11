@@ -26,7 +26,7 @@ components:{
     },
     methods:{
         fun(){
-            console.log("sampe check emit");
+            console.log("sample check emit");
         }
     }
 }
