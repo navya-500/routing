@@ -16,7 +16,7 @@ import es6 from '../components/es6.vue'
 import map from '../components/map.vue'
 import New from '../components/new.vue'
 import npm from '../components/npmtable.vue'
-import emit from '../components/emitChild.vue'
+//import emit from '../components/emitChild.vue'
 import emitt from '../components/emitParent.vue'
 import ques1 from '../components/ques01.vue'
 import ques2 from '../components/ques02.vue'
@@ -49,6 +49,15 @@ import question5 from '../components/Question5.vue'
 import question6 from '../components/Question6.vue'
 import fet from '../components/fetching.vue'
 import fetchurl from '../components/fetchurl.vue'
+import Qu1 from '../components/Assignment06/Qu1.vue'
+import Qu2 from '../components/Assignment06/Qu2.vue'
+import task1 from '../components/TASK/task1.vue'
+import task3 from '../components/TASK/task3.vue'
+import task6 from '../components/TASK/task6.vue'
+import task9 from '../components/TASK/task9.vue'
+import task8 from '../components/TASK/task8.vue'
+import task7 from '../components/TASK/task7.vue'
+import task10 from '../components/TASK/task10.vue'
 Vue.use(VueRouter)
 const routes=  [
 {path : '/HelloWorld',name : "HelloWorld", component: HelloWorld},
@@ -67,7 +76,7 @@ const routes=  [
 {path : '/map',name : "map",component: map},
 {path : '/new',name : "new",component: New},
 {path : '/npm',name : "npm",component: npm},
-{path : '/emit',name : "emit",component: emit},
+//{path : '/emit',name : "emit",component: emit},
 {path : '/emitt',name : "emitt",component: emitt},
 {path : '/ques1',name : "ques1",component: ques1},
 {path : '/ques2',name : "ques2",component: ques2},
@@ -99,7 +108,17 @@ const routes=  [
 {path : '/question4',name : "question4",component: question4},
 {path : '/question5',name : "question5",component: question5},
 {path : '/fet',name : "fet",component: fet},
-{path : '/fetchurl',name : "fetchurl",component: fetchurl}
+{path : '/fetchurl',name : "fetchurl",component: fetchurl},
+//{path : '/scrap',name : "scrap",component: scrap},
+{path : '/Qu1',name : "Qu1",component: Qu1},
+{path : '/Qu2',name : "Qu2",component: Qu2},
+{path : '/task1',name : "task1",component: task1},
+{path : '/task3',name : "task3",component: task3},
+{path : '/task6',name : "task6",component: task6},
+{path : '/task9',name : "task9",component: task9},
+{path : '/task8',name : "task8",component: task8},
+{path : '/task7',name : "task7",component: task7},
+{path : '/task10',name : "task10",component: task10}
 ]
 let router =   new VueRouter({
     routes // short for `routes: routes`
