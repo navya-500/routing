@@ -58,9 +58,11 @@ import task9 from '../components/Assignment-07/task9.vue'
 import task8 from '../components/Assignment-07/task8.vue'
 import task7 from '../components/Assignment-07/task7.vue'
 import task10 from '../components/Assignment-07/task10.vue'
+import quest05 from '../components/test-KVS/quest05'
 Vue.use(VueRouter)
 const routes=  [
 {path : '/HelloWorld',name : "HelloWorld", component: HelloWorld},
+{path : '/quest05',name : "quest05",component: quest05},
 {path : '/api',name : "api",component: api},
 {path : '/que1',name : "QUE1",component: QUE1},
 {path : '/que2',name : "QUE2",component: QUE2},
