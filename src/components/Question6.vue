@@ -6,7 +6,7 @@
     <b-card v-for="value in items" :key="value.domains" class="mb-2">
       <b-card-text>university_name:-- {{ value.university_name }} </b-card-text>
       <p>domains:--{{ value.domains }}</p>
-      <p @click="redirect(value.website_url)">website_url:--{{ value.website_url }}</p>
+      <a @click="redirect(value.website_url)">website_url:--{{ value.website_url }}</a>
       <p>state_province:--{{ value.state_province }}</p>
     </b-card>
   </div>
